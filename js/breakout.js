@@ -4,6 +4,11 @@ closeBtn = document.getElementById('close-btn')
 canvas = document.getElementById('canvas')
 ctx = canvas.getContext('2d')
 
+score = 0
+
+brickRowCount = 9
+brickColumnCount = 5
+
 // Create ball properties
 ball = {
     x: canvas.width / 2,
@@ -22,6 +27,16 @@ paddle = {
     h:  10,
     speed: 8,
     dx: 0,
+}
+
+// Create brick properties
+brickInfo = {
+    w: 70,
+    h: 20,
+    padding: 10,
+    offsetX: 45,
+    offsetY: 60,
+    visible: true
 }
 
 // Draw ball on canvas
@@ -54,6 +69,8 @@ function draw() {
    drawBall()
    drawScore()
 }
+
+draw()
 
 // Rules open and close event handlers
 rulesBtn.addEventListener('click', () => {
