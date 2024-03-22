@@ -77,7 +77,7 @@ function drawScore() {
 
 // Draw bricks on canvas
 function drawBricks() {
-    bricks.forEach(column) => {
+    bricks.forEach(column => {
         column.forEach(brick => {
             ctx.beginPath()
             ctx.rect(brick.x, brick.y, brick.w, brick.h)
