@@ -22,7 +22,6 @@ paddle = {
     h:  10,
     speed: 8,
     dx: 0,
-
 }
 
 // Draw ball on canvas
@@ -31,20 +30,29 @@ function drawBall() {
   ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2)
   ctx.fillStyle = '#009599'
   ctx.fill()
-  ctz.closePath()
+  ctx.closePath()
 }
 
 // Draw paddle on canvas
 function drawPaddle() {
     ctx.beginPath()
-    ctx.rect(paddle.x, paddle.y, paddle.h)
+    ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h)
     ctx.fillStyle = '#009599'
     ctx.fill()
-    ctz.closePath()
-  }
+    ctx.closePath()
+}
 
-drawPaddle()
-drawBall()
+// Draw score on canvas
+function drawScore() {
+    ctx.fillText(`Score: ${score}, canvas.width-100, 30)
+}
+
+// Draw everything
+function draw() {
+   drawPaddle()
+   drawBall()
+   drawScore()
+}
 
 // Rules open and close event handlers
 rulesBtn.addEventListener('click', () => {
