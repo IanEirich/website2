@@ -109,11 +109,15 @@ function keyDown(e) {
     if (e.key == 'ArrowRight' || e.key == 'Right') {
         paddle.dx = paddle.speed
     }
+    if (e.key == 'ArrowLeft' || e.key == 'Left') {
+        paddle.dx = -paddle.speed
+    }
 }
 
 // Keyup event
 function keyUp(e) {
-     if (e.key == 'ArrowRight' || e.key == 'Right') {
+     if (e.key == 'ArrowRight' || e.key == 'Right' ||
+         e.key == 'ArrowLeft) {
         paddle.dx = 0
      }
 }
