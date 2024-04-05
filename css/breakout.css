@@ -24,10 +24,21 @@ h1 {
     color: white;
 }
 
+
+.play {
+    cursor: pointer;
+    border: 0;
+    padding: 20px 90px;
+    background: black;
+    color: white;
+    border-radius: 50px;
+    margin: 10px;
+}
+
 .btn {
      cursor: pointer;
      border: 0;
-     padding: 10px 20px;
+     padding: 10px 10px;
      background: black;
      color: white;
      border-radius: 5px;
@@ -35,6 +46,14 @@ h1 {
 
 .btn:hover {
     background: #222222;
+}
+
+.play:hover {
+    background: #222222;
+}
+
+.btn:active {
+    transform: scale(0.98)
 }
 
 .btn:active {

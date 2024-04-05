@@ -6,6 +6,7 @@ ctx = canvas.getContext('2d')
 
 score = 0
 
+
 brickRowCount = 9
 brickColumnCount = 5
 
@@ -97,6 +98,7 @@ function draw() {
    drawScore()
    drawBricks()
 }
+
 
 // Move paddle on canvas
 function movePaddle() {
@@ -208,6 +210,18 @@ function showAllBricks() {
             brick.visible = true
         })
     })
+}
+
+btn = document.createElement('button')
+    btn.classList.add('btn')
+
+function startup () {
+    moveBall()
+    movePaddle()
+    draw()
+
+    if (btn.addEventListener('click', () => {
+        ))
 }
 
 // Update canvas drawing and animation
