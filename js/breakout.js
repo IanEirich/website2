@@ -212,17 +212,17 @@ function showAllBricks() {
     })
 }
 
-btn = document.createElement('button')
-    btn.classList.add('btn')
+// btn = document.createElement('button')
+//     btn.classList.add('btn')
 
-function startup () {
-    moveBall()
-    movePaddle()
-    draw()
+// function startup () {
+//     moveBall()
+//     movePaddle()
+//     draw()
 
-    if (btn.addEventListener('click', () => {
-        ))
-}
+//     if (btn.addEventListener('click', () => {
+//         ))
+// }
 
 // Update canvas drawing and animation
 function update () {
