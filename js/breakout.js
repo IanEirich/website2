@@ -25,7 +25,7 @@ ball = {
 paddle = {
     x: canvas.width / 2 - 40,
     y: canvas.height - 20,
-    w: 80,
+    w: 1000,
     h:  10,
     speed: 8,
     dx: 0,
@@ -170,7 +170,7 @@ function moveBall() {
            ball.dx = 0
         //    showAllBricks()
            score = score
-           paddle.x = paddle.x 
+           paddle.x = paddle.x
             if (
             ball.x - ball.size > paddle.x &&
             ball.x + ball.size < paddle.x + paddle.w &&
