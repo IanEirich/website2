@@ -109,6 +109,8 @@ playBtn.addEventListener('click', () => {
    })
 
 playBtn2.addEventListener('click', () => {
+    showAllBricks()
+    score = 0
     
  })
 
