@@ -6,6 +6,7 @@ ctx = canvas.getContext('2d')
 
 score = 0
 
+// Rules open and close event handlers
 
 brickRowCount = 9
 brickColumnCount = 5
@@ -99,6 +100,15 @@ function draw() {
    drawBricks()
 }
 
+//start of my work
+playBtn = document.getElementById('play')
+
+playBtn.addEventListener('click', () => {
+    update()
+   })
+
+
+//end of my work
 
 // Move paddle on canvas
 function movePaddle() {
@@ -153,12 +163,23 @@ function moveBall() {
         ball.dx = -1 * ball.dx
     }
 
-    //wall collision (bottom)
-    if (ball.y + ball.size > canvas.height) {
-        ball.dy = -1 * ball.dy
-        showAllBricks()
-        score = 0
-    }
+      //wall collision (bottom)
+      if (ball.y + ball.size > canvas.height) {
+        //    ball.dy = -1 * ball.dy'
+           ball.dy = 0
+           ball.dx = 0
+        //    showAllBricks()
+           score = score
+           if (
+            ball.x - ball.size > paddle.x &&
+            ball.x + ball.size < paddle.x + paddle.w &&
+            ball.y + ball.size > paddle.y
+         ) {
+            ball.dy = 0
+            ball.dx = 0
+            ball.speed = 0
+           }
+      }
 
     //wall collision (left)
     if (ball.x + ball.size < 0) {
@@ -212,17 +233,10 @@ function showAllBricks() {
     })
 }
 
-// btn = document.createElement('button')
-//     btn.classList.add('btn')
+function stop() {
+    none
+}
 
-// function startup () {
-//     moveBall()
-//     movePaddle()
-//     draw()
-
-//     if (btn.addEventListener('click', () => {
-//         ))
-// }
 
 // Update canvas drawing and animation
 function update () {
@@ -232,9 +246,8 @@ function update () {
     requestAnimationFrame(update)
 }
 
-update()
+    //  update()
 
-// Rules open and close event handlers
 rulesBtn.addEventListener('click', () => {
     rules.classList.add('show')
 })
