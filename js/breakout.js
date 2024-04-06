@@ -108,8 +108,8 @@ playBtn.addEventListener('click', () => {
    })
 
 playBtn.addEventListener('click', () => {
-//     update()
-// })
+
+ })
 
 //end of my work
 
