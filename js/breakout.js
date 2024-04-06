@@ -107,6 +107,9 @@ playBtn.addEventListener('click', () => {
     update()
    })
 
+playBtn.addEventListener('click', () => {
+//     update()
+// })
 
 //end of my work
 
