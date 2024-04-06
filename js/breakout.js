@@ -170,7 +170,7 @@ function moveBall() {
            ball.dx = 0
         //    showAllBricks()
            score = score
-           paddle 
+           paddle.x = paddle.x 
             if (
             ball.x - ball.size > paddle.x &&
             ball.x + ball.size < paddle.x + paddle.w &&
