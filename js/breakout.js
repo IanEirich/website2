@@ -102,13 +102,14 @@ function draw() {
 
 //start of my work
 playBtn = document.getElementById('play')
+playBtn2 = document.getElementById('play')
 
 playBtn.addEventListener('click', () => {
     update()
    })
 
-playBtn.addEventListener('click', () => {
-
+playBtn2.addEventListener('click', () => {
+    
  })
 
 //end of my work
