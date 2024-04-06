@@ -108,11 +108,15 @@ playBtn.addEventListener('click', () => {
     update()
    })
 
-playBtn2.addEventListener('click', () => {
-    showAllBricks()
-    score = 0
-    
- })
+// playBtn2.addEventListener('click', () => {
+// //     showAllBricks()
+// //     score = 0
+// //     requestAnimationFrame(update)
+// //     ball.dx = 4
+// //     ball.dy = -4
+// //     ball.size = 10,
+// //     ball.speed = 3,
+// //  })
 
 //end of my work
 
