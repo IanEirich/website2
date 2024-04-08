@@ -110,7 +110,7 @@ playBtn.addEventListener('click', () => {
 
     if (count = 1)
      {
-        update()
+         update()
      }
 
     else if (count > 1)
