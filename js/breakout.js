@@ -173,7 +173,7 @@ function moveBall() {
 
       //wall collision (bottom)
       if (ball.y + ball.size > canvas.height) {
-        //    ball.dy = -1 * ball.dy
+            //ball.dy = -1 * ball.dy
            ball.dy = 0
            ball.dx = 0
            score = score
