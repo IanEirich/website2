@@ -110,13 +110,11 @@ playBtn.addEventListener('click', () => {
 
     if (count = 1)
      {
+         draw()
          update()
+         ball.speed = 0
+         ball.speed = 3
      }
-
-    // else if (count > 1)
-    // {
-    //     showAllBricks()
-    // }
 })
 
 
@@ -201,11 +199,11 @@ function moveBall() {
              showAllBricks()
              ball.dy = -4
              ball.dx = 4
-             ball.speed = 3
+             ball.speed = 0
              draw()
              score = 0
-
            })
+            ball.speed = 3
 
 
             if (
