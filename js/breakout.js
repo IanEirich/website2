@@ -112,9 +112,7 @@ playBtn.addEventListener('click', () => {
      {
          draw()
          update()
-         return;
      }
-     return;
 })
 
 
@@ -194,11 +192,10 @@ function moveBall() {
              showAllBricks()
              ball.x = 410
              ball.y = 300
-             ball.speed = 3
+             ball.speed = ball.speed
              ball.dx = 4;
              ball.dy = -4;
              score = 0;
-             return;
           })
       }
 
