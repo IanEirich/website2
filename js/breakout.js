@@ -107,16 +107,18 @@ playBtn2 = document.getElementById('play')
 playBtn.addEventListener('click', () => {
     update()
 
-    // playBtn2.addEventListener('click', () => {
-    //     showAllBricks()
-    //     score = 0
-    //     update()
-    //     ball.dx = 4
-    //     ball.dy = -4
-    //     ball.size = 10,
-    //     ball.speed = 3,
-    //  })
-   })
+    if (console)
+})
+
+// playBtn2.addEventListener('click', () => {
+//          showAllBricks()
+//          score = 0
+//          update()
+//          ball.dx = 4
+//          ball.dy = -4
+//          ball.size = 10,
+//          ball.speed = 3,
+//       })
 
 
 //end of my work
