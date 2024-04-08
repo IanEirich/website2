@@ -274,9 +274,10 @@ function update () {
     movePaddle()
     draw()
     requestAnimationFrame(update)
+    ball.speed = 3
+    paddle.speed = 8
 }
 
-    //  update()
 
 rulesBtn.addEventListener('click', () => {
     rules.classList.add('show')
