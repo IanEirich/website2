@@ -111,7 +111,8 @@ playBtn.addEventListener('click', () => {
     if (count = 1)
      {
          draw()
-         requestAnimationFrame(update)
+         update()
+         return;
      }
      return;
 })
