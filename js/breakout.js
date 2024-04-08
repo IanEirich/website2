@@ -198,6 +198,7 @@ function moveBall() {
              ball.dx = 2;
              ball.dy = -2;
              score = 0;
+             return;
           })
       }
 
