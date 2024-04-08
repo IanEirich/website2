@@ -193,10 +193,12 @@ function moveBall() {
              showAllBricks()
              ball.x = 410
              ball.y = 300
-             ball.speed = ball.speed
-             ball.dx = 4;
-             ball.dy = -4;
-             score = 0;
+             ball.speed = 3
+             ball.dx = 4
+             ball.dy = -4
+             score = 0
+             requestAnimationFram(update)
+             return;
           })
       }
 
