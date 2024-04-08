@@ -112,13 +112,17 @@ playBtn.addEventListener('click', () => {
      {
          update()
      }
+})
 
-    else if (count > 1)
+playBtn.addEventListener('click', () => {
+    count = count + 1
+
+    if (count > 1)
      {
           draw()
      }
-
 })
+
 
 // playBtn2.addEventListener('click', () => {
 //          showAllBricks()
