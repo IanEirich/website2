@@ -198,7 +198,7 @@ function moveBall() {
              ball.dy = -4
              score = 0
              requestAnimationFram(update)
-             return;
+             return; v
           })
       }
 
