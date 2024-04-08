@@ -274,6 +274,8 @@ resetBtn.addEventListener('click', () => {
         speed: 8,
         dx: 0,
     }
+
+    
     return;
 })
 
