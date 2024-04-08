@@ -205,12 +205,11 @@ function moveBall() {
            playBtn.addEventListener('click', () => {
             showAllBricks()
             draw()
-            update()
-            // ball.dy = 0 * ball.dy
-            // ball.dx = 4;
-            // ball.dy = -4;
-            // ball.speed = 3
-            score = 0;
+             ball.dy = -1 * ball.dy
+             ball.dx = 4;
+             ball.dy = -4;
+             ball.speed = 3
+             score = 0;
           })
       }
 
