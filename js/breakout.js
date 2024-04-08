@@ -103,12 +103,21 @@ function draw() {
 //start of my work
 playBtn = document.getElementById('play')
 playBtn2 = document.getElementById('play')
+count = 0
 
 playBtn.addEventListener('click', () => {
-    update()
     count = count + 1
 
-    if (console)
+    if (count = 1)
+     {
+        update()
+     }
+
+    else if (count > 1)
+     {
+          showAllBricks()
+     }
+
 })
 
 // playBtn2.addEventListener('click', () => {
