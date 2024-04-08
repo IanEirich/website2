@@ -35,6 +35,16 @@ h1 {
     margin: 10px;
 }
 
+.reset {
+    cursor: pointer;
+    border: 0;
+    padding: 20px 90px;
+    background: black;
+    color: white;
+    border-radius: 50px;
+    margin: 10px;
+}
+
 .btn {
      cursor: pointer;
      border: 0;
