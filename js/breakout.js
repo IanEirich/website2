@@ -195,8 +195,8 @@ function moveBall() {
              ball.x = 410
              ball.y = 300
              ball.speed = 3
-             ball.dx = 2;
-             ball.dy = -2;
+             ball.dx = 4;
+             ball.dy = -4;
              score = 0;
              return;
           })
