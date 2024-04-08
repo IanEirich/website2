@@ -176,6 +176,7 @@ function moveBall() {
             //ball.dy = -1 * ball.dy
            ball.dy = 0
            ball.dx = 0
+           ball.speed = 0
            score = score
 
             if (
