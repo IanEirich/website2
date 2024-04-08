@@ -275,7 +275,8 @@ resetBtn.addEventListener('click', () => {
         dx: 0,
     }
 
-    
+    showAllBricks()
+    score = 0
 })
 
 // Update canvas drawing and animation
