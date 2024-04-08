@@ -258,6 +258,12 @@ function update () {
     movePaddle()
     draw()
     requestAnimationFrame(update)
+
+    if (ball.y + ball.size > canvas.height)
+    {
+        return;
+    }
+    return;
 }
 
 
