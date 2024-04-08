@@ -189,10 +189,6 @@ function moveBall() {
            }
 
            playBtn.addEventListener('click', () => {
-            moveBall(return)
-            movePaddle(return)
-            draw(return)
-            requestAnimationFrame(return)
              showAllBricks()
              draw()
              ball.dy = -1 * ball.dy
