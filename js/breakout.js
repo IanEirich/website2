@@ -106,6 +106,7 @@ playBtn2 = document.getElementById('play')
 
 playBtn.addEventListener('click', () => {
     update()
+    count = count + 1
 
     if (console)
 })
