@@ -274,8 +274,6 @@ function update () {
     movePaddle()
     draw()
     requestAnimationFrame(update)
-    ball.speed = 3
-    paddle.speed = 8
 }
 
 
