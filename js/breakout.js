@@ -115,7 +115,7 @@ playBtn.addEventListener('click', () => {
 
     else if (count > 1)
      {
-          showAllBricks()
+          draw()
      }
 
 })
