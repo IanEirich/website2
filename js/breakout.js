@@ -111,9 +111,7 @@ playBtn.addEventListener('click', () => {
     if (count = 1)
      {
          draw()
-         update()
-         ball.speed = 0
-         ball.speed = 3
+         requestAnimationFrame(update)
      }
 })
 
@@ -199,11 +197,10 @@ function moveBall() {
              showAllBricks()
              ball.dy = -4
              ball.dx = 4
-             ball.speed = 0
              draw()
              score = 0
            })
-            ball.speed = 3
+
 
 
             if (
@@ -269,9 +266,6 @@ function showAllBricks() {
     })
 }
 
-function stop() {
-    none
-}
 
 
 // Update canvas drawing and animation
