@@ -276,7 +276,6 @@ resetBtn.addEventListener('click', () => {
     }
 
     
-    return;
 })
 
 // Update canvas drawing and animation
