@@ -187,21 +187,10 @@ function moveBall() {
 
       //wall collision (bottom)
       if (ball.y + ball.size > canvas.height) {
-        //    ball.dy = -1 * ball.dy'
+        //    ball.dy = -1 * ball.dy
            ball.dy = 0
            ball.dx = 0
            score = score
-        //    paddle.x = 0
-
-           playBtn.addEventListener('click', () => {
-             showAllBricks()
-             ball.dy = -4
-             ball.dx = 4
-             draw()
-             score = 0
-           })
-
-
 
             if (
             ball.x - ball.size > paddle.x &&
@@ -212,6 +201,15 @@ function moveBall() {
                 ball.dx = 0
                 ball.speed = 0
            }
+
+           playBtn.addEventListener('click', () => {
+            showAllBricks()
+            ball.dy = 0 * ball.dy
+            ball.dx = 4;
+            ball.dy = -4;
+            ball.speed = 3
+            score = 0;
+          })
       }
 
     //wall collision (left)
