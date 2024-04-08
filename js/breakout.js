@@ -116,20 +116,6 @@ playBtn.addEventListener('click', () => {
 })
 
 
-
-
-
-// playBtn2.addEventListener('click', () => {
-//          showAllBricks()
-//          score = 0
-//          update()
-//          ball.dx = 4
-//          ball.dy = -4
-//          ball.size = 10,
-//          ball.speed = 3,
-//       })
-
-
 //end of my work
 
 // Move paddle on canvas
@@ -203,6 +189,10 @@ function moveBall() {
            }
 
            playBtn.addEventListener('click', () => {
+            moveBall(return)
+            movePaddle(return)
+            draw(return)
+            requestAnimationFrame(return)
              showAllBricks()
              draw()
              ball.dy = -1 * ball.dy
