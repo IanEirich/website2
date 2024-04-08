@@ -113,10 +113,10 @@ playBtn.addEventListener('click', () => {
          update()
      }
 
-    else if (count > 1)
-    {
-         draw()
-    }
+    // else if (count > 1)
+    // {
+    //     showAllBricks()
+    // }
 })
 
 
@@ -194,9 +194,20 @@ function moveBall() {
         //    ball.dy = -1 * ball.dy'
            ball.dy = 0
            ball.dx = 0
-        //    showAllBricks()
            score = score
-           paddle.x = 0
+        //    paddle.x = 0
+
+           playBtn.addEventListener('click', () => {
+             showAllBricks()
+             ball.dy = -4
+             ball.dx = 4
+             ball.speed = 3
+             draw()
+             score = 0
+
+           })
+
+
             if (
             ball.x - ball.size > paddle.x &&
             ball.x + ball.size < paddle.x + paddle.w &&
