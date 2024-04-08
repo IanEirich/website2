@@ -198,7 +198,7 @@ function moveBall() {
              ball.dy = -4
              score = 0
              requestAnimationFram(update)
-             return; 
+             return;
           })
       }
 
@@ -257,7 +257,24 @@ function showAllBricks() {
 resetBtn = document.getElementById('reset')
 
 resetBtn.addEventListener('click', () => {
+    ball = {
+        x: canvas.width / 2,
+        y: canvas.height / 2,
+        size: 10,
+        speed: 3,
+        dx: 4,
+        dy: -4,
+    }
 
+    paddle = {
+        x: canvas.width / 2 - 40,
+        y: canvas.height - 20,
+        w: 120,
+        h:  10,
+        speed: 8,
+        dx: 0,
+    }
+    return;
 })
 
 // Update canvas drawing and animation
