@@ -41,7 +41,7 @@ body {
 }
 
 .screen.up {
-    margin-top: -00vh;
+    margin-top: -200vh;
 }
 
 a {
@@ -109,7 +109,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%,-150%);
+    transform: translate(-50%, -150%);
     transition: transform 0.4s ease-in;
 }
 
