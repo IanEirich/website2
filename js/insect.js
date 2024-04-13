@@ -9,6 +9,7 @@ let seconds = 0
 let score = 0
 let selected_inssect = {}
 
+
 start_btn.addEventListener('click', () => {
     screens[0].classList.add('up')
 })
@@ -30,6 +31,7 @@ function startGame() {
 }
 
 function increaseTime() {
+    winGame()
     let m = Math.floor(seconds / 60)
     let s = seconds % 60
     if (m < 10) {
@@ -40,6 +42,15 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
     seconds++
+}
+
+function winGame() {
+    if (seconds < 30 && score > 59) {
+        message2.classList.add('visible')
+    }
+    else if (seconds > 30 && score < 59) {
+        message3.classList.add('visible')
+    }
 }
 
 function createInsect() {
