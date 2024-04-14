@@ -89,8 +89,8 @@ function increaseScore() {
 function endGame() {
     if (seconds > 30)
     {
-        setTimeout(createInsect, 0)
-        setTimeout(createInsect, 0)
+        setTimeout(createInsect, 100000000000)
+        setTimeout(createInsect, 100000000000)
     }
 }
 
