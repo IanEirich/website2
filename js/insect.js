@@ -42,7 +42,6 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
     seconds++
-    endGame()
 }
 
 function winGame() {
@@ -84,14 +83,6 @@ function increaseScore() {
         message.classList.add('visible')
     }
     scoreEl.innerHTML = `Score: ${score}`
-}
-
-function endGame() {
-    if (seconds > 30)
-    {
-        setTimeout(createInsect, 100000000000)
-        setTimeout(createInsect, 100000000000)
-    }
 }
 
 function getRandomLocation() {
