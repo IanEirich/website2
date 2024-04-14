@@ -42,6 +42,7 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
     seconds++
+    endGame()
 }
 
 function winGame() {
@@ -85,6 +86,13 @@ function increaseScore() {
     scoreEl.innerHTML = `Score: ${score}`
 }
 
+function endGame() {
+    if (seconds > 30)
+    {
+        setTimeout(createInsect, 0)
+        setTimeout(createInsect, 0)
+    }
+}
 
 function getRandomLocation() {
     const width = window.innerWidth
