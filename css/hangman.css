@@ -9,5 +9,9 @@ body {
     stroke: #ffffff;
     stroke-width: 4px;
     stroke-linecap: round;
-    
+
+}
+
+.figure-part {
+    display: none;
 }
