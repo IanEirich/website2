@@ -6,12 +6,12 @@ const notification = document.getElementById('notification-container')
 const finalMessage = document.getElem'ntById('final-message')
 const figureParts = document.querySelectorAll('.figure-part')
 
-const word = ['application", 'programming', 'interface', 'wizard']
+const word = ['application', 'programming', 'interface', 'wizard']
 
 let selectedIndex= Math.floor(word.length * Math.random())
 let selectedWord = word[selectedIndex]
 
-const correctLetters = ['a', 'p']
+const correctLetters = ['w', 'i', 'z', 'a', 'r', 'd']
 const wrongLetters = []
 
 // Show hidden word
@@ -26,6 +26,12 @@ function displayWord() {
         `).join('')
     }
     `
+    const innerWord = wordEl.innerText.replace(/\n/g, '')
+
+    if (innerWord == selectedWord) {
+        finalMessage.innerText = 'Congratulations! You won!"
+        popup.style.display = 'flex'
+    }
 
 }
 
