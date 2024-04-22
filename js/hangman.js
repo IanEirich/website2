@@ -46,6 +46,8 @@ window.addEventListener('keydown', e => {
                 correctLetters.push(letter)
 
                 displayWord()
+            }   else {
+                showNotification()
             }
         }
     }
