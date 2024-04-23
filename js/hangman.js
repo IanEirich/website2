@@ -11,6 +11,8 @@ const word = ['application', 'programming', 'interface', 'wizard']
 let selectedIndex = Math.floor(word.length * Math.random())
 let selectedWord = word[selectedIndex]
 
+console.log(selectedWord)
+
 const correctLetters = []
 const wrongLetters = []
 
@@ -29,7 +31,7 @@ function displayWord() {
     const innerWord = wordEl.innerText.replace(/\n/g, '')
 
     if (innerWord == selectedWord) {
-        finalMessage.innerText = 'Congratulations! You won!"
+        finalMessage.innerText = "Congratulations! You won!"
         popup.style.display = 'flex'
     }
 
@@ -41,7 +43,7 @@ function updateWrongLettersEl() {
 }
 
 // Show notification
-function shoowNotification {
+function shoowNotification() {
     notification.classList.add('show')
 
     setTimeout(() => {
