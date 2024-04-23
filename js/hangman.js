@@ -40,7 +40,7 @@ function updateWrongLettersEl() {
 }
 
 // Show notification
-function shoowNotification() {
+function showNotification() {
     notification.classList.add('show')
 
     setTimeout(() => {
