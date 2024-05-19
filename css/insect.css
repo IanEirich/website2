@@ -47,7 +47,13 @@ body {
 
 a {
     color: white;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 50px rgba(220,155,250);
+    position: relative;
+    bottom: -50px;
 }
+
 
 h1 {
     line-height: 1.4;
