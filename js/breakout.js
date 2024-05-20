@@ -100,7 +100,6 @@ function draw() {
    drawBricks()
 }
 
-//start of my work
 playBtn = document.getElementById('play')
 playBtn2 = document.getElementById('play')
 count = 0
@@ -116,7 +115,6 @@ playBtn.addEventListener('click', () => {
 })
 
 
-//end of my work
 
 // Move paddle on canvas
 function movePaddle() {
